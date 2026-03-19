@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number] } },
 };
 
 const iconStyle = "w-8 h-8 text-primary drop-shadow-[0_0_15px_hsl(82_85%_67%/0.3)]";
